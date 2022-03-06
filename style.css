@@ -1,0 +1,152 @@
+:root{
+
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+
+--popping:'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: var(--popping);
+    color:var(--Grayish-Blue);
+    text-align: Left;
+}
+
+
+body{
+    background-color: var(--Very-Light-Gray);
+    padding: 40px;
+}
+
+header,footer{
+    margin: auto;
+    max-width: 532px;
+    
+    word-wrap: break-word;
+}
+ header h1{
+    font-weight: 200;
+    text-align: center;
+    font-size: 30px;
+
+    margin-bottom: 20px;
+    
+}
+
+header span{
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    color: var(--Very-Dark-Blue);
+    
+}
+
+
+header p{
+    text-align: center;
+}
+
+.container{
+    display: block;
+    margin: 55px auto auto auto;
+    width: 80%;
+    
+  
+}
+
+.container2{
+    display: block;
+}
+
+.card{
+   
+    
+    max-width: 320px;
+    
+    text-align: center;
+    padding: auto;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 1px grey;
+    
+   
+}
+
+.card .icon{
+  margin-top: 30px;
+  text-align: right;
+}
+h2{
+    color:var(--Very-Dark-Blue);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.card-one{
+    border-top: 4px solid var(--Cyan);
+}
+
+.card-two{
+    border-top: 4px solid var(--Red);
+}
+
+.card-three{
+    border-top: 4px solid var(--Orange);
+}
+
+.card-four{
+    border-top: 4px solid var(--Blue);
+}
+
+
+@media screen and (min-width:1200px){
+    .container{
+        display: flex;
+        width:100%;
+        
+    
+    }
+     .container2{
+        width: 320px;
+        margin-inline: 20px;
+    }   
+
+    .card{
+        height: 250px;
+    }
+    .card-four, .card-one{
+      
+        margin-top: 110px;
+       
+    }
+    .card-one{
+        margin-right: 10px;
+    }
+
+    .card-four{
+        margin-left: 10px;
+    }
+
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
